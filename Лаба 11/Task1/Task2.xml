@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="Task1.css"?>
+<!DOCTYPE root[
+        <!ELEMENT root (text)>
+        <!ELEMENT text (#PCDATA)>
+        <!ENTITY name "XML">
+        ]>
+<root>
+    <text>&name; (Extensible Markup Language) — расширяемый язык разметки. По структуре напоминает HTML. XML отличается тем,
+        что теги для разметки разработчик должен определять самостоятельно. Используется для передачи данных между
+        приложениями по аналогии с JSON.</text>
+</root>
