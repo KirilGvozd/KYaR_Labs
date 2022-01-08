@@ -1,0 +1,14 @@
+img{
+	width: 300px;
+	height: 350px;
+}
+figure{
+	color: white;
+	font-size: 14pt;
+	background: purple;
+	border: 5px solid violet;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	float: left;
+}

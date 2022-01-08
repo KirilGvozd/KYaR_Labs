@@ -1,0 +1,73 @@
+body{
+    background-image: url(fit.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+h1{
+    color: red;
+    font-family: Arial;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: blue;
+    font-family: Times New Roman;
+}
+h3{
+    text-align: left;
+    font-family: Helvetica;
+}
+.first{
+    font-size: 12pt;
+    font-family: Arial Black;
+}
+.second{
+    font-size: 18pt;
+    font-family: Times New Roman;
+}
+ul{
+	list-style-image: url(list_image.png);
+}
+.paragraph{
+    font-family: Arial;
+}
+.word{
+	color: rgb(158, 16, 201);
+    font-size: 150%;
+}
+.letter{
+    color: rgb(190, 30, 97);
+    font-size: 150%;
+}
+.a{
+    color: blue;
+    font-size: 150%;
+}
+body{
+    background-size: 110px;
+    background-image: url(fit.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+table{
+    margin: auto
+}
+tr,td{
+    text-align: center;
+    border: 1px solid black;
+
+}
+img{
+    float: left;
+}
+.img_2{
+    float: right;
+    width: 500px;
+    height: 500px;
+}
+p{
+    margin: auto;
+    text-indent: 30px;
+}
