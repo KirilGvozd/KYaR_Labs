@@ -1,0 +1,9 @@
+td, th{
+	padding: 0px;
+}
+tr:first-child{
+	background-color: blueviolet;
+}
+td:first-child{
+	background-color: yellow;
+}
