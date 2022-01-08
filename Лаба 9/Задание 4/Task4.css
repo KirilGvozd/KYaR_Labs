@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.grid{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 55px 200px 80px;
+    grid-template-rows: 50px 75px 20px;
+}
+.cell, .cell1, .cell2, .cell3, .cell4{
+    word-break: break-word;
+    text-align: center;
+    background-color: lawngreen;
+}
+.cell{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.cell1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.cell4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

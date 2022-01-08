@@ -1,0 +1,34 @@
+.grid{
+    margin-left: 20px;
+    grid-template-rows: 25px 50px;
+    grid-template-columns: repeat(3, 200px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    display: grid;
+}
+.cell1, .cell2, .cell3, .cell4, .cell5, .cell6, .cell7, .cell8, .test, .cell9{
+    text-align: center;
+    border: 1px solid black;
+}
+.cell3, .cell4, .cell5, .cell6, .cell0{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.cell1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid2{
+    margin-top: 5px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: 15px repeat(2,135px) 20px repeat(2,150px) 15px;
+}
+.cell3, .test{
+    word-break: break-all;
+}
+.test{
+    height: 103px;
+}
