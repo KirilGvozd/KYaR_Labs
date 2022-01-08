@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+}
+.menu{
+    list-style-type: none;
+}
+nav{
+    margin: 10px;
+    float: left;
+    border: 1px solid #3388ad;
+    width: 200px;
+    height: auto;
+}
+.second_column{
+    float: left;
+    border: 1px solid #312c7c;
+    padding: 5px;
+}
+@media (max-width: 600px) {
+    nav li .second{
+        display: none;
+    }
+    nav li:hover .second{
+        display: block;
+    }
+}

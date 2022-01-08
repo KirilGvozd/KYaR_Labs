@@ -1,0 +1,53 @@
+@import "Task4_1.css" (min-width: 1280px);
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.div1, .div2{
+    background-color: aquamarine;
+    padding: 5px;
+    text-align: center;
+}
+.div1{
+    color: #672906;
+    font-size: 22pt;
+    width: 640px;
+    height: 75px;
+}
+.div2{
+    color: blue;
+    margin: 5px;
+    width: 200px;
+    height: 100px;
+}
+figcaption{
+    text-align: center;
+}
+.div3{
+    border: 1px solid #1d6bef;
+    margin: 5px;
+}
+@media (max-width:560px) {
+    .photo{
+        width: 150px;
+        height: 100px;
+    }
+    figcaption{
+        font-size: 10pt;
+        color: #5fa859;
+    }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+    figcaption{
+        color: rebeccapurple;
+        font-size: 5pt;
+    }
+    .photo{
+        width: 500px;
+        height: 250px;
+    }
+}
