@@ -1,0 +1,46 @@
+.first{
+	display: block;
+	border: 5px solid;
+	border-color: orange darkblue yellow brown;
+}
+.second{
+	display: block;
+	border: 5px solid;
+	border-color: white #007BA7 white #007BA7;
+}
+.third{
+	display: block;
+	border: 5px;
+	border-style: solid dashed dashed dashed;
+	border-color: rgb(229, 43, 80) blue blue blue;
+}
+.fourth{
+	display: block;
+	border: 1px dotted orange;
+}
+.fifth{
+	border: 2px;
+	border-color: darkblue maroon;
+	border-style: solid dashed;
+}
+.sixth{
+	border: 5px double #B3446C;
+}
+.seventh{
+	border-width: 1px 0px 3px 0px;
+	border-style: dashed solid ;
+	border-color: #808000 #FF7518;
+}
+.eightth{
+	border: 5px double;
+	border-color: white white #CC7722 #CC7722;
+}
+.ninth{
+	border: 5px;
+	border-color: #B5A642 #B5A642 ;
+	border-style: ridge ridge none none;
+}
+.tenth{
+	border: 5px rgb(0, 40, 0);
+	border-style: none dotted dotted dotted;
+}
