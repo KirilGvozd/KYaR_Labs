@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Оформление заказа</title>
+        <style>
+            div{
+                text-indent: 10cm;
+            }
+            h3 { 
+                background-color: aquamarine;
+            }
+  </style>
+        </style>
+    </head>
+    <body>
+        <form>
+            <p><h3><b>Оформление заказа</b></h3></p>
+            <p>Имя: <div><input type="text"></div></p>
+            <p>Телефон: <div><input type="text"></div></p>
+            <p>Адрес: <div><textarea name="comment"></textarea></div></p>
+            <p>Способ оплаты:<div><input type="radio">наличными</div></p>
+            <p><div><input type="radio">пластиковая карта</div></p>
+            <p><div><input type="radio">безналичный расчёт</div></p>
+            <p>Желаемый день доставки:<div><label></label><select id="selectvalue">
+                <option>Понедельник</option>
+                <option>Вторник</option>
+                <option>Среда</option>
+                <option>Четверг</option>
+                <option>Пятница</option>
+                <option>Суббота</option>
+                <option>Воскресенье</option>
+            </select></div></p>
+            <p>Дополнительно:<div><input type="checkbox">перед доставкой свяжитесь со мной</div></p>
+            <p><div><input type="checkbox">курьер должен быть трезвый</div></p>
+            <p><input type="submit"></p>
+        </form>
+    </body>
+</html>
