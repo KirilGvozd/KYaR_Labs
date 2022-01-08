@@ -1,0 +1,8 @@
+@keyframes test{
+	from{top: 0px;}
+	to{top: 200px;}
+}
+div {
+	position: relative;
+	animation: test 5s infinite linear;
+}
