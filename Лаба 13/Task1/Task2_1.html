@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Task2_1.css">
+    <meta charset="UTF-8">
+    <title>Black Sabbath</title>
+</head>
+<body>
+    <div>
+        <h1><span id="heading"></span></h1>
+        <p><span id="paragraph1"></span></p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Black_Sabbath_%281970%29.png/375px-Black_Sabbath_%281970%29.png">
+        <h2 id="heading_2"></h2>
+        <ol id="list_of_albums">
+            <li id="first"></li>
+            <li id="second"></li>
+            <li id="third"></li>
+            <li id="fourth"></li>
+            <li id="fifth"></li>
+            <li id="sixth"></li>
+            <li id="seventh"></li>
+            <li id="eighth"></li>
+            <li id="ninth"></li>
+        </ol>
+    </div>
+    <script>
+        txt="<text>";
+
+        txt= txt+"<heading>Black Sabbath</heading>";
+        txt=txt+"<paragraph1>Британская рок-группа, образованная в Бирмингеме, Англия, в 1968 году и оказавшая " +
+            "значительное влияние на развитие рок-музыки, прежде всего, хеви-метал. Группу образовали четверо выходцев " +
+            "из Астона[en] в Бирмингеме: Оззи Осборн, Тони Айомми, Гизер Батлер и Билл Уорд.</paragraph1>";
+        txt= txt+"<heading_2>Альбомы с участием Оззи Осборна:</heading_2>"
+        txt= txt+"<first>Black Sabbath</first>";
+        txt = txt+"<second>Paranoid</second>";
+        txt = txt+"<third>Master Of Reality</third>";
+        txt= txt+"<fourth>Vol.4</fourth>";
+        txt= txt+"<fifth>Sabbath Bloody Sabbath</fifth>";
+        txt= txt+"<sixth>Sabotage</sixth>";
+        txt= txt+"<seventh>Technical Ecstasy</seventh>";
+        txt= txt+"<eighth>Never Say Die!</eighth>";
+        txt= txt+"<ninth>13</ninth>";
+
+        txt=txt+"</text>";
+        if (window.DOMParser){
+            parser= new DOMParser();
+            xmlDoc=parser.parseFromString(txt,"text/xml");
+        }
+        else {
+            xmlDoc= new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async = false;
+            xmlDoc.loadXML(txt);
+        }
+        document.getElementById("heading").innerHTML = xmlDoc.getElementsByTagName("heading")[0].childNodes[0].nodeValue;
+        document.getElementById("paragraph1").innerHTML = xmlDoc.getElementsByTagName("paragraph1")[0].childNodes[0].nodeValue;
+        document.getElementById("heading_2").innerHTML = xmlDoc.getElementsByTagName("heading_2")[0].childNodes[0].nodeValue;
+        document.getElementById("first").innerHTML = xmlDoc.getElementsByTagName("first")[0].childNodes[0].nodeValue;
+        document.getElementById("second").innerHTML = xmlDoc.getElementsByTagName("second")[0].childNodes[0].nodeValue;
+        document.getElementById("third").innerHTML = xmlDoc.getElementsByTagName("third")[0].childNodes[0].nodeValue;
+        document.getElementById("fourth").innerHTML = xmlDoc.getElementsByTagName("fourth")[0].childNodes[0].nodeValue;
+        document.getElementById("fifth").innerHTML = xmlDoc.getElementsByTagName("fifth")[0].childNodes[0].nodeValue;
+        document.getElementById("sixth").innerHTML = xmlDoc.getElementsByTagName("sixth")[0].childNodes[0].nodeValue;
+        document.getElementById("seventh").innerHTML = xmlDoc.getElementsByTagName("seventh")[0].childNodes[0].nodeValue;
+        document.getElementById("eighth").innerHTML = xmlDoc.getElementsByTagName("eighth")[0].childNodes[0].nodeValue;
+        document.getElementById("ninth").innerHTML = xmlDoc.getElementsByTagName("ninth")[0].childNodes[0].nodeValue;
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rock+Salt&display=swap');
+
+h1 {
+    font-size: 30pt;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    color: #2a9d8f;
+}
+
+h2 {
+    color: #03045e;
+    font-family: 'Rock Salt', cursive;
+    font-size: 20pt;
+    text-align: center;
+}
+
+p,
+ol {
+    font-family: Arial, "sans-serif";
+    font-size: 14pt;
+}
+
+ol {
+    color: #0b090a;
+}

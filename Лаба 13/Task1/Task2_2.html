@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Task2_2.css">
+    <meta charset="UTF-8">
+    <title>Motörhead</title>
+</head>
+<body>
+<div>
+    <h1><span id="heading"></span></h1>
+    <p><span id="paragraph1"></span></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Motorhead_5632.jpg/375px-Motorhead_5632.jpg" alt="Motörhead">
+    <h1 id="heading_2"></h1>
+    <p id="paragraph2"></p>
+    <h1 id="heading_3"></h1>
+    <p id="paragraph3"></p>
+</div>
+<script>
+    txt="<text>";
+
+    txt= txt+"<heading>Motörhead</heading>";
+    txt=txt+"<paragraph1>Motörhead — британская хэви-метал-группа, оказавшая большое влияние на развитие всей тяжёлой" +
+        " музыки, в частности, на возникновение спид-метала, хотя отнести её музыку к этому стилю можно только с натяжкой. " +
+        "Музыку группы, скорее, можно охарактеризовать как сочетание хард-рока, панк-рока и прото-трэша.</paragraph1>";
+    txt= txt+"<heading_2>Ранний период</heading_2>";
+    txt=txt+"<paragraph2>После того, как Лемми выгнали из группы Hawkwind за злоупотребление наркотиками, он решил" +
+        " создать новую группу, которую сначала хотел назвать Bastard («Ублюдок»), но менеджер группы отговорил его от " +
+        "этого, сказав, что с таким названием группа вряд ли добьётся популярности. Тогда Лемми решил назвать группу " +
+        "Motörhead по названию своей последней песни, которую он сочинил для Hawkwind. На американском сленге слово " +
+        "«Motorhead» означает «амфетаминовый наркоман»[5]. «Для красоты» этого слова Лемми решил использовать " +
+        "хеви-метал-умлаут — «ö».</paragraph2>";
+    txt=txt+"<heading_3>На пути к успеху</heading_3>";
+    txt=txt+"<paragraph3>Первый официальный одноимённый альбом группы (хотя фактически он был записан вторым, но альбом " +
+        "1976 года On Parole был выпущен только в 1979 году) увидел свет в ноябре 1977 года и добрался до 43 места в " +
+        "британском хит-параде. В следующем году был записан сингл «Louie Louie», который принёс группе её первый успех " +
+        "и возможность появиться на радио BBC Radio 1 и телевидении в передаче BBC «Television’s Top of the Pops». Этот " +
+        "успех позволил звукозаписывающей компании Bronze Records решиться записать с группой новый студийный альбом. " +
+        "Сингл «Overkill» предварил выход одноимённого альбома и был выпущен в марте 1979 года. Этот альбом стал первым " +
+        "альбомом группы, попавшим в UK Top 40 и достигшим в итоге 24-го места. Вслед за альбомом в июне того же года " +
+        "был выпущен сингл «No Class», не превзошедший однако успеха альбома Overkill.</paragraph3>";
+    txt=txt+"</text>";
+    if (window.DOMParser){
+        parser= new DOMParser();
+        xmlDoc=parser.parseFromString(txt,"text/xml");
+    }
+    else {
+        xmlDoc= new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async = false;
+        xmlDoc.loadXML(txt);
+    }
+    document.getElementById("heading").innerHTML = xmlDoc.getElementsByTagName("heading")[0].childNodes[0].nodeValue;
+    document.getElementById("paragraph1").innerHTML = xmlDoc.getElementsByTagName("paragraph1")[0].childNodes[0].nodeValue;
+    document.getElementById("heading_2").innerHTML = xmlDoc.getElementsByTagName("heading_2")[0].childNodes[0].nodeValue;
+    document.getElementById("paragraph2").innerHTML = xmlDoc.getElementsByTagName("paragraph2")[0].childNodes[0].nodeValue;
+    document.getElementById("heading_3").innerHTML = xmlDoc.getElementsByTagName("heading_3")[0].childNodes[0].nodeValue;
+    document.getElementById("paragraph3").innerHTML = xmlDoc.getElementsByTagName("paragraph3")[0].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>
