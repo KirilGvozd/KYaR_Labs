@@ -1,0 +1,46 @@
+$color: blue;
+$size: 150%;
+$font: sans-serif;
+
+.paragraph,
+h1 {
+  font-family: Arial, $font;
+}
+.word {
+  color: rgb(158, 16, 201);
+  font-size: $size;
+}
+
+.letter {
+  color: rgb(190, 30, 97);
+  font-size: $size;
+}
+
+.a {
+  color: $color;
+  font-size: $size;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  font-family: "Times New Roman", serif;
+  color: $color;
+}
+
+h3 {
+  text-align: left;
+  font-family: "Helvetica", $font;
+}
+
+p {
+  font-size: 14pt;
+  font-family: "Arial Black", $font;
+}

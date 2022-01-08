@@ -1,0 +1,42 @@
+.paragraph,
+h1 {
+    font-family: Arial, "sans-serif";
+}
+.word {
+    color: rgb(158, 16, 201);
+    font-size: 150%;
+}
+
+.letter {
+    color: rgb(190, 30, 97);
+    font-size: 150%;
+}
+
+.a {
+    color: blue;
+    font-size: 150%;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    font-family: "Times New Roman", serif;
+    color: blue;
+}
+
+h3 {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+}
+
+p {
+    font-size: 14pt;
+    font-family: "Arial Black", sans-serif;
+}

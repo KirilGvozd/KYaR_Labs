@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5</title>
+</head>
+<body>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="circleGradient">
+            <stop offset="50%" stop-color="pink"/>
+            <stop offset="100%" stop-color="orange"/>
+        </radialGradient>
+        <linearGradient id="triangleGradient">
+            <stop offset="20%" stop-color="green"/>
+            <stop offset="70%" stop-color="orange"/>
+        </linearGradient>
+    </defs>
+    <circle fill="url(#circleGradient)" cx="50" cy="50" r="45"></circle>
+    <rect id="rectangle" stroke="orange" stroke-width="3" fill="pink" x="100" height="100" width="100">
+        <animate xlink:href="#rectangle" attributeName="stroke" dur="3s" from="orange" to="magenta" begin="0s" repeatCount="indefinite"></animate>
+    </rect>
+    <ellipse id="ellipse" rx="70" ry="35" cx="280" cy="50" fill="purple">
+        <animate xlink:href="#ellipse" begin="click" dur="3s" attributeName="fill" from="purple" to="pink"></animate>
+    </ellipse>
+    <polygon id="triangle" stroke="magenta" stroke-width="3" fill="url(#triangleGradient)" points="350 100, 400 0, 450 100">
+        <animate xlink:href="#triangle" attributeName="stroke" from="magenta" to="blue" begin="mouseover" dur="5s"/>
+    </polygon>
+    <polyline points="10 110, 250 110, 160 160, 460 160" stroke="purple" fill="none"></polyline>
+</svg>
+</body>
+</html>
