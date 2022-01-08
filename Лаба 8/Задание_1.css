@@ -1,0 +1,211 @@
+.nav1 ul {
+        margin:0;
+        padding:0;
+        list-style-type:none;
+    }
+.nav1>ul>li {
+        float:left;
+        width:180px;
+        position: relative;
+}
+.nav1 li a {
+        display: block;
+        background: yellow;
+        border: 1px solid black;
+        padding: 8px;
+        text-decoration: none;
+}
+.nav1 li .second {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left:0;
+}
+.nav1 li:hover .second{
+                display: block;
+}
+.nav1 li li {
+        width:180px;
+}
+ul.nav {
+list-style-type: none;
+}
+ul.nav a {
+display: block;
+}
+.nav{
+	text-align: left;
+	border: 2px solid orange;
+	width: 100px;
+	height: auto;
+}
+.nav1 a{
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px 15px 10px 30px;
+	background-color: yellow;
+	text-decoration: none;
+	color: green;
+}
+.nav1 li{
+	display: inline;
+	float: left;
+}
+.nav1_1, .nav1_2, .nav1_3, .nav1_4, .nav1_5{
+	background-color: yellow;
+}
+.first_a{
+	text-decoration: none;
+}
+.first_a:link{
+	color: red;
+}
+.second_a:visited{
+	color: #8B0000;
+}
+.third_a:hover{
+	color: green;
+}
+.fourth_a:active{
+	color: rgb(184, 134, 11);
+}
+.first{
+	width: auto;
+	height: 300px;
+}
+.first:hover{
+	transform: scale(0.5);
+}
+.second{
+	width: auto;
+	height: 300px;
+}
+.second:hover{
+	transform: rotate(45deg);
+}
+.third{
+	width: auto;
+	height: 300px;
+}
+.third:hover{
+	transform: translate(50px);
+}
+.fourth{
+	width: auto;
+	height: 300px;
+}
+.fourth:hover{
+	transform: skew(-20deg);
+}
+.Task2{
+	margin-left: 10px;
+}
+img{
+	width: 200px;
+	height: 200px;
+}
+.img_1, .img_2, .img_3, .img_4{
+	margin: 20px;
+}
+.img_1{
+	float: left;
+	transform: perspective(1500px) rotateX(45deg);
+}
+.img_2{
+	float: left;
+	transform: perspective(1500px) rotateY(45deg);
+}
+.img_3{
+	float: left;
+	transform: perspective(1500px) rotateX(60deg);
+}
+.img_4{
+	float: left;
+	transform: perspective(1500px) rotateY(-45deg);
+}
+.Task3{
+	margin-top: 300px;
+	color: whitesmoke;
+	transition: color 20s linear;
+	background-color: darkviolet;
+	width: 300px;
+	height: 300px;
+}
+.Task3:hover{
+	color: green;
+}
+@keyframes photos{
+	0%{background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.heartlandrecords.com.au%2Fwp-content%2Fuploads%2F2020%2F06%2Fmetallica-kill-em-all-lp-front.jpg&f=1&nofb=1);}
+	25%{background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F10%2F49%2FFEmQcP.jpg&f=1&nofb=1);}
+	50%{background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.heavymetalmerchant.com%2Fassets%2Ffull%2FUM_BLCKND005R-1.jpg%3F1544584142&f=1&nofb=1);}
+	75%{background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F1712%2F4551%2Fproducts%2Fartrockstore-metallica-and-justice-for-all-album_grande.jpg%3Fv%3D1551586076&f=1&nofb=1);}
+	100%{background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.emp-online.com%2Fdw%2Fimage%2Fv2%2FBBQV_PRD%2Fon%2Fdemandware.static%2F-%2FSites-master-emp%2Fdefault%2Fdw175c4abe%2Fimages%2F4%2F2%2F2%2F8%2F422827.jpg%3Fsw%3D1000%26sh%3D800%26sm%3Dfit%26sfrm%3Dpng&f=1&nofb=1);}
+}
+.Task4{
+	margin: 20px;
+	width: 500px;
+	height: 500px;
+	border: 2px solid blanchedalmond;
+	animation: photos 5s infinite linear;
+}
+.Task5_1, .Task5_2, .Task5_3, .Task5_4{
+	background-attachment: scroll;
+	background-image: url(https://duckduckgo.com/i/f95cc5ec.jpg);
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+.Task5_1{
+	animation: Task5_1 5s linear infinite;
+}
+.Task5_2{
+	animation: Task5_2 5s linear infinite;
+}
+.Task5_3{
+	animation: Task5_3 5s linear infinite;
+}
+.Task5_4{
+	animation: Task5_4 5s linear infinite;
+}
+h1{
+	animation: h1 5s linear infinite reverse;
+	text-align: center;
+	font-family: Arial Black;
+}
+.h1_1{
+	color: red;
+}
+.h1_2{
+	color: orange;
+}
+.h1_3{
+	color: yellow;
+}
+.h1_4{
+	color: green;
+}
+.h1_5{
+	color: darkblue;
+}
+@keyframes Task5_1{
+	from{left: 0px}
+	to{left: 200px}
+}
+@keyframes Task5_2{
+	from{top: 0px;}
+	to{top: 200px;}
+}
+@keyframes Task5_3{
+	0%{left: 0px; top: 200px;}
+	25%{left: 100px; top: 300px;}
+	50%{left: 200px; top: 200px;}
+	75%{left: 300px; top: 300px;}
+	100%{left: 400px; top: 200px;}
+}
+@keyframes Task5_4{
+	0% { left: 400px; top: 400px; }
+	25% { left: 600px; top: 400px; }
+	50% { left: 600px; top: 600px; }
+	75% { left: 400px; top: 600px; }
+	100% { left: 400px; top: 400px; }
+}

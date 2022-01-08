@@ -1,0 +1,102 @@
+.nav1 ul {
+        margin:0;
+        padding:0;
+        list-style-type:none;
+    }
+.nav1>ul>li {
+        float:left;
+        width:200px;
+        position: relative;
+}
+.nav1 li a {
+        display: block;
+}
+.nav1 li .second {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left:0;
+}
+.nav1 li:hover .second{
+	display: inline;
+
+}
+.nav1 li li {
+	width:100px;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+.menu, .form, .chess_desk, .gallery{
+	display: block;
+	margin-top: 0px;
+	width: 100px;
+	padding: 5px 0px 0px 5px;
+	text-align: left;
+}
+.menu{
+	border: 2px solid black;
+	display: inline-block;
+	font-family: Arial;
+	margin-bottom: 0px;
+	height: 25px;
+	text-align: left;
+	width: 200px;
+	background-color: red;
+	color: aqua;
+}
+.form{
+	background-color: orange;
+	font-family: Arial Black;
+	height: 25px;
+	border: dashed 2px greenyellow;
+}
+.chess_desk{
+	font-family: Calibri;
+	border: 2px solid blueviolet ;
+	height: 50px;
+	background-color: yellow;
+}
+.gallery{
+	font-family: Bahnschrift;
+	border: 2px dashed khaki;
+	height: 25px;
+	background-color: green;
+}
+
+.first_link{
+	color: antiquewhite;
+}
+.second_link{
+	color: green;
+}
+.third_link{
+	color: red;
+}
+.nav li{
+	display: inline;
+	float: left;
+	border: 1px solid black;
+}
+.bstu, .fit, .pim, .xtit{
+	padding-left: 10px;
+	text-align: left;
+	width: 100px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-indent: 20px;
+	display: block;
+	background: url(facultet.png) no-repeat 0 0;
+}
+.fit:hover{
+	background: url(facultet.png) no-repeat 0 -32px;
+}
+.pim:hover{
+	background: url(facultet.png) no-repeat 0 -90px;
+}
+.xtit:hover{
+	background: url(facultet.png) no-repeat 0 -60px;
+}
